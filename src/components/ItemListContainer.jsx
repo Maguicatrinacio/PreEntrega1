@@ -28,8 +28,8 @@ const ItemListContainer = () => {
     }, [id]);
 
     return (
-        <div className="container">
-            <div className="row">
+        <div className="container-fluid container-productos">
+            <div className="row m-5">
                 <ItemList items={productos}/>
             </div>
             <div className="row">

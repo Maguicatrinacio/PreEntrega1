@@ -14,7 +14,7 @@ const CardContainer = () => {
                         <div className="card">
                             <img src={CardUno} className="img-fluid" alt="Card Zapatillas" /> 
                             <div className="card-body text-center">
-                                <h4>Zapatillas</h4>
+                                <h3>Zapatillas</h3>
                                 <p>Wilson, Bullpadel, Nox, Babolat, Asics, Head, Joma, Lotto, Puma.</p>
                             </div>
                         </div>
@@ -25,7 +25,7 @@ const CardContainer = () => {
                         <div className="card">
                             <img src={CardDos} className="img-fluid" alt="Card Indumentaria" /> 
                             <div className="card-body text-center">
-                                <h4>Indumentaria</h4>
+                                <h3>Indumentaria</h3>
                                 <p>Wilson, Bullpadel, Nox, Babolat, Asics, Head, Joma, Siux, Puma.</p>
                             </div>
                         </div>
@@ -38,8 +38,8 @@ const CardContainer = () => {
                         <div className="card">
                             <img src={CardTres} className="img-fluid" alt="Card Paletas" /> 
                             <div className="card-body text-center">
-                                <h4>Paletas</h4>
-                                <p>Wilson, Starvie, Bullpadel, Siux, Nox, Babolat, Asics, Head, Varlion, Joma, Lotto, Puma.</p>
+                                <h3>Paletas</h3>
+                                <p>Wilson, Starvie, Bullpadel, Siux, Nox, Babolat, Asics, Head, Lotto, Puma.</p>
                             </div>
                         </div>
                     </Link>
@@ -49,7 +49,7 @@ const CardContainer = () => {
                         <div className="card">
                             <img src={CardCuatro} className="img-fluid" alt="Card Accesorios" /> 
                             <div className="card-body text-center">
-                                <h4>Accesorios</h4>
+                                <h3>Accesorios</h3>
                                 <p>Wilson, Bullpadel, Nox, Babolat, Starvie, Head.</p>
                             </div>
                         </div>

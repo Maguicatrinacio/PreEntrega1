@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=DM+Serif+Display&family=Inter+Tight:wght@300;600&family=Ysabeau+Office:wght@500&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -8,13 +10,47 @@
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.258)
 }
 
-.nav-link{
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  color: rgb(43, 60, 92);
-  text-shadow: 2px 1px 1px rgba(56, 78, 120, 0.493);
+.card{
+  font-family: "Annapurna SIL", serif;
+  font-size: 20px;
+  color: rgb(66, 72, 106);
+}
+.card h3{
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(46, 52, 83);
 }
 
+#navbar{
+  background-color: white;
+  box-shadow: 0px 2px 10px 1px rgb(130, 130, 130);
+}
+
+.nav-link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: rgb(60, 75, 102);
+  font-family: "Ysabeau Office", sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgba(56, 78, 120, 0.379);
+}
+
+.button-carrito{
+  background-color: white;
+  border: none;
+}
+
+.container-mrg, .container-productos, .containerDetail{
+  margin-top: 127px;
+}
+
+.container-productos{
+  background-color: rgba(132, 153, 162, 0.731);
+}
+
+.card .precio{
+  font-size: 25px;
+}
 
 .containerDetail{
   display: flex;
@@ -26,9 +62,95 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: rgb(46, 52, 83);
+  font-family: "Annapurna SIL", serif;
+  font-size: 23px;
+}
+
+.detail h2{
+  font-size: 35px;
+}
+
+.btn-azul{
+  background-color: rgba(46, 52, 83, 0.916);
+  color: white;
+  border: none;
+}
+
+.btn-azul:hover{
+  background-color: rgba(46, 52, 83, 0.801);
+  color: white;
 }
 
 .agregarCarrito{
   display: flex;
   gap:20px;
+}
+
+.container-cart{
+  margin-top: 160px;
+}
+
+.h2-carrito{
+  color: rgb(46, 52, 83);
+  font-family: "Annapurna SIL", serif;
+}
+
+.productos-carrito{
+  margin-top: 30px;
+}
+.tabla-detalle{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  background-color: rgb(203, 201, 201);
+}
+
+.tabla-productos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  gap: 10px;
+}
+
+.tabla-producto{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.tabla-total{
+  display: flex;
+  justify-content: center;
+}
+
+.footer{
+  background-color: rgb(132, 153, 162);
+  padding: 51px 30px 0px;
+  bottom: 0;
+  margin-top: 100px;
+}
+
+.redes-iconos .nav-link img{
+  width: 36px;
+  height: 36px;
+}
+
+.footer-nav .nav-link{
+  color: white;
+  font-family: "Annapurna SIL", serif;
+  font-size: 18px;
+}
+
+.footer-bottom{
+  color: rgba(83, 83, 83, 0.765);
+}
+
+@media(max-width: 991px) {
+  .sidebar{
+    background-color: white;
+    backdrop-filter: blur(10px);
+  }
 }

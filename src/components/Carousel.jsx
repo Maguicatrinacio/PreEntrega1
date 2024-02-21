@@ -6,7 +6,7 @@ import CardContainer from "./CardContainer"
 
 const Carousel = () => {
     return(
-        <>
+        <div className="container-mrg">
             <div id="carouselExampleIndicators" className="carousel slide my-4">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -35,7 +35,7 @@ const Carousel = () => {
                 
             </div>
             <CardContainer />
-        </>
+        </div>
     )
 }
 
