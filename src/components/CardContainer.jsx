@@ -10,7 +10,7 @@ const CardContainer = () => {
         <div className="container my-5 cards-inicio">
             <div className="row my-3">
                 <div className="col">
-                    <Link to={"/categoria/zapatillas"} className="text-decoration-none"> 
+                    <Link to={"/categoria/zapatillas"} className="text-decoration-none a-card "> 
                         <div className="card">
                             <img src={CardUno} className="img-fluid" alt="Card Zapatillas" /> 
                             <div className="card-body text-center">

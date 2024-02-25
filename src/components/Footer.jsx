@@ -33,10 +33,10 @@ const Footer = () => {
                                     <NavLink className="nav-link" to={"/productos"}>Productos</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Contacto</a>
+                                    <a className="nav-link a-ftr" href="#">Contacto</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Nosotros</a>
+                                    <a className="nav-link a-ftr" href="#">Nosotros</a>
                                 </li>
                             </ul>
                     </div>

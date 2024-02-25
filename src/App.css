@@ -218,28 +218,48 @@
 
 @media(max-width: 576px){
   .navbar-brand img{
-    width:95%;
+    width:80%;
+    margin-left: -25px;
   }
   .cards-inicio{
     display: flex;
     flex-direction: column;
-    margin-left: 12%;
+    margin-left: 10%;
   }
   .card{
     font-size: 15px;
-    width: 400px;
+    width: 300px;
     margin-bottom: 25px;
   }
+  .a-card{
+    width: 200px;
+  }
+  .carousel{
+    padding-top: 3px;
+    width: 99%;
+  }
   .containerDetail img{
-    width: 300px;
+    width: 250px;
     margin-left: 22%;
   }
   .detail{
     margin-top: -40px;
     font-size: 18px;
   }
+  .btn-agregar{
+    white-space: nowrap;
+  }
   .container-cart{
     font-size: 16px;
+  }
+  .cardProductos{
+    margin-left: -20px;
+  }
+  .footer{
+    font-size: 14px;
+  }
+  .footer .nav-item .a-ftr{
+    display: none;
   }
 
   .tabla-producto .carrito-img{
@@ -262,5 +282,8 @@
     font-size: 12px;
     white-space:nowrap;
     margin-left: -10px;
+  }
+  .navbar{
+    width: 100%;
   }
 }
