@@ -8,9 +8,9 @@ const CartWidget = () => {
 
     return (
         <Link to={"/cart"}>
-            <button type="button" class="btn btn-light position-relative button-carrito">
+            <button type="button" className="btn btn-light position-relative button-carrito">
                 <img src={Cart} alt="carrito de compras" />
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cantTotalProductos()} </span>
+                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{cantTotalProductos()} </span>
             </button>
         </Link>
     )

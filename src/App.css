@@ -40,12 +40,18 @@
   border: none;
 }
 
-.container-mrg, .container-productos, .containerDetail{
+.container-mrg, .container-productos, .containerDetail, .container-checkout{
   margin-top: 127px;
 }
 
 .container-productos{
   background-color: rgba(132, 153, 162, 0.731);
+  padding: 40px 80px;
+}
+
+
+.container-loading{
+  height: 100vh;
 }
 
 .card .precio{
@@ -54,10 +60,10 @@
 
 .containerDetail{
   display: flex;
+  margin-bottom: 10px;
 }
 
 .detail{
-  width: 50%;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -82,55 +88,72 @@
   color: white;
 }
 
+.btn-celeste{
+  background-color: rgba(72, 139, 170, 0.932);
+  color: white;
+}
+
+.btn-celeste:hover{
+  background-color: rgba(62, 123, 152, 0.932);
+  color: white;
+}
+
 .agregarCarrito{
   display: flex;
-  gap:20px;
+  gap:40px;
 }
 
 .container-cart{
   margin-top: 160px;
+  margin-bottom: 75px;
+  font-size: 18px;
+  color: rgb(46, 52, 83);
 }
 
-.h2-carrito{
-  color: rgb(46, 52, 83);
+.titulos{
+  color: rgba(79, 116, 133, 0.932);
   font-family: "Annapurna SIL", serif;
+  margin-top: 20px;
 }
 
 .productos-carrito{
-  margin-top: 30px;
+  margin-top: 40px;
 }
+
 .tabla-detalle{
   display: flex;
-  gap: 60px;
   justify-content: center;
-  background-color: rgb(203, 201, 201);
+  background-color: rgba(219, 222, 223, 0.662);
+  padding-top: 12px;
 }
 
 .tabla-productos{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
-  gap: 10px;
 }
 
 .tabla-producto{
   display: flex;
-  gap: 50px;
   justify-content: center;
-  background-color: rgb(255, 255, 255);
 }
 
 .tabla-total{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end ;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.p-total{
+  font-size: 19px;
+  font-weight: 500;
 }
 
 .footer{
   background-color: rgb(132, 153, 162);
   padding: 51px 30px 0px;
   bottom: 0;
-  margin-top: 100px;
 }
 
 .redes-iconos .nav-link img{
@@ -148,9 +171,96 @@
   color: rgba(83, 83, 83, 0.765);
 }
 
-@media(max-width: 991px) {
+@media(max-width: 992px) {
   .sidebar{
     background-color: white;
     backdrop-filter: blur(10px);
+  }
+
+  .offcanvas-body{
+    margin-top: -50px;
+    gap: 40px;
+  }
+
+  .cart-widget{
+    margin-bottom: 20px;
+  }
+
+  .navbar-nav .nav-item{
+    margin-top: 15px;
+  }
+  .containerDetail img{
+    width: 300px;
+    margin-left: 30%;
+  }
+  .detail{
+    margin-top: -30px;
+    font-size: 22px;
+  }
+  .container-cart{
+    font-size: 17px;
+  }
+  .tabla-producto .carrito-img{
+    width: 100px;
+    padding-top: 20px;
+  }
+  .tabla-detalle{
+    padding-left: 20px;
+  }
+  .btn-sm{
+    font-size: 13px;
+    white-space:nowrap;
+  }
+  .p-total{
+    white-space:nowrap;
+  }
+}
+
+@media(max-width: 576px){
+  .navbar-brand img{
+    width:95%;
+  }
+  .cards-inicio{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+  }
+  .card{
+    font-size: 15px;
+    width: 400px;
+    margin-bottom: 25px;
+  }
+  .containerDetail img{
+    width: 300px;
+    margin-left: 22%;
+  }
+  .detail{
+    margin-top: -40px;
+    font-size: 18px;
+  }
+  .container-cart{
+    font-size: 16px;
+  }
+
+  .tabla-producto .carrito-img{
+    width: 70px;
+    padding-top: 30px;
+  }
+  .tabla-detalle{
+    padding-left: 20px;
+  }
+  .p-total{
+    font-size: 15px;
+    margin-left: -85px;
+  }
+
+  .tabla-total{
+    width: 100%;
+  }
+
+  .btn-sm{
+    font-size: 12px;
+    white-space:nowrap;
+    margin-left: -10px;
   }
 }

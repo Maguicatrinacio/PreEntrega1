@@ -12,10 +12,10 @@ const ItemDetail = ({item}) =>{
     return(
         <div className="container">
             <div className="row containerDetail">
-                <div className="col-md-4 offset-md-2 d-flex align-items-center">
-                    <img src={item.imagen} alt={item.titulo} className="img-fluid" />
+                <div className="col-lg-4  d-flex">
+                    <img src={item.imagen} alt={item.titulo} className="img-fluid" width={450} />
                 </div>
-                <div className="col-md-4 detail">
+                <div className="col-lg-8 py-5 detail">
                     <h2>{item.titulo}</h2>
                     <p>{item.descripcion}</p>
                     <div className="agregarCarrito">

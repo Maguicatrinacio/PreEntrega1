@@ -2,40 +2,6 @@ import LogoHeader from "./LogoHeader";
 import CartWidget from "./CartWidget";
 import { Link, NavLink } from "react-router-dom";
 
-/*const NavBar = () =>{
-    return (
-        <div className="container my-3">
-            <div className="row">
-                <div className="col-md-1">
-                    <Link to={"/"}><LogoHeader tamano={120} /></Link>
-                </div>
-                <div className="col-md-10 d-flex align-items-center justify-content-center">
-                    <ul className="nav">
-                        <li className="nav-item mx-4">
-                            <NavLink className="nav-link fs-5" to={"/productos"}>Productos</NavLink>
-                        </li>
-                        <li className="nav-item mx-4">
-                            <NavLink className="nav-link fs-5" to={"/categoria/paletas"}>Paletas</NavLink>
-                        </li>
-                        <li className="nav-item mx-4">
-                            <NavLink className="nav-link fs-5" to={"/categoria/indumentaria"}>Indumentaria</NavLink>
-                        </li>
-                        <li className="nav-item mx-4">
-                            <NavLink className="nav-link fs-5" to={"/categoria/zapatillas"}>Zapatillas</NavLink>
-                        </li>
-                        <li className="nav-item mx-4">
-                            <NavLink className="nav-link fs-5" to={"/categoria/accesorios"}>Accesorios</NavLink>
-                        </li>
-                    </ul>
-                </div>
-                <div className="col-md-1 d-flex align-items-center justify-content-end">
-                    <CartWidget />
-                </div>
-            </div>
-        </div>
-    )
-}*/
-
 const NavBar = () =>{
     return (
         <nav className="navbar navbar-expand-lg fixed-top" id="navbar">
@@ -44,9 +10,9 @@ const NavBar = () =>{
                 <button className="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div className="sidebar offcanvas offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div className="offcanvas-header">
-                        <Link to={"/"} className="offcanvas-title" id="offcanvasNavbarLabel"><LogoHeader tamano={100} /></Link>
+                        <Link to={"/"} className="offcanvas-title" id="offcanvasNavbarLabel"><LogoHeader tamano={90} /></Link>
                         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body d-flex flex-column p-4 flex-lg-row p-lg-0 ">
@@ -67,7 +33,7 @@ const NavBar = () =>{
                                 <NavLink className="nav-link mx-4" to={"/categoria/accesorios"}>ACCESORIOS</NavLink>
                             </li>
                         </ul>
-                        <div className="px-3 py-0 d-flex flex-column  flex-lg-row align-items-center justify-content-center gap-3">
+                        <div className="px-3 py-0 d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 cart-widget">
                             <CartWidget />
                         </div>
                     </div>

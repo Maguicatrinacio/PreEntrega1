@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({item}) =>{
     return(
-        <div className="col-md-3 text-center">
+        <div className="col-md-6 col-sm-12 col-lg-3 text-center">
             <Link to={"/item/"+ item.id} className="text-decoration-none">
                 <div className="card cardProductos">
                     <img src={item.imagen} className="card-img-top" alt={item.titulo} />
