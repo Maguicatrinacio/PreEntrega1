@@ -127,6 +127,9 @@
   padding-top: 12px;
 }
 
+.cart-mobile, .cart-mobile .tabla-producto .container .row-prod{
+  display: none;
+}
 .tabla-productos{
   display: flex;
   flex-direction: column;
@@ -200,6 +203,10 @@
   .container-cart{
     font-size: 17px;
   }
+  .cart-mobile{
+    display: none;
+    
+  }
   .tabla-producto .carrito-img{
     width: 100px;
     padding-top: 20px;
@@ -221,10 +228,13 @@
     width:80%;
     margin-left: -25px;
   }
+  .navbar-brand{
+    margin-right: 0;
+  }
   .cards-inicio{
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    margin-left: 9%;
   }
   .card{
     font-size: 15px;
@@ -235,16 +245,18 @@
     width: 200px;
   }
   .carousel{
-    padding-top: 3px;
-    width: 99%;
+    width: 100%;
   }
   .containerDetail img{
     width: 250px;
-    margin-left: 22%;
+    margin-left: 15%;
   }
   .detail{
     margin-top: -40px;
     font-size: 18px;
+  }
+  .agregarCarrito{
+    gap:20px;
   }
   .btn-agregar{
     white-space: nowrap;
@@ -253,7 +265,7 @@
     font-size: 16px;
   }
   .cardProductos{
-    margin-left: -20px;
+    margin-left: -30px;
   }
   .footer{
     font-size: 14px;
@@ -261,17 +273,37 @@
   .footer .nav-item .a-ftr{
     display: none;
   }
-
+  .cart-desktop{
+    display: none;
+  }
+  .cart-mobile, .cart-mobile .tabla-producto .container .row-prod{
+    display: flex;
+  }
   .tabla-producto .carrito-img{
-    width: 70px;
+    width: 100px;
     padding-top: 30px;
   }
+  .row-prod{
+    display: flex;
+    width: 100vw;
+    margin-bottom: 30px;
+  }
+  .col-detalle {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    line-height: 0;
+  }
+  .col-detalle p{
+    margin-top: 20px;
+  }
   .tabla-detalle{
-    padding-left: 20px;
+    display: none;
   }
   .p-total{
     font-size: 15px;
-    margin-left: -85px;
+    margin-left: -100px;
+    display: flex;
   }
 
   .tabla-total{
@@ -279,9 +311,14 @@
   }
 
   .btn-sm{
-    font-size: 12px;
+    width: 100vw;
+    font-size: 15px;
     white-space:nowrap;
     margin-left: -10px;
+  }
+  .vaciar{
+    margin-top: -30px;
+    margin-bottom: 40px;
   }
   .navbar{
     width: 100%;

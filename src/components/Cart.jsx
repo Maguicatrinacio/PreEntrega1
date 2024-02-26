@@ -42,7 +42,7 @@ const Cart = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="tabla-productos">
+                    <div className="tabla-productos cart-desktop">
                         {cart.map(product =>
                             <div key={product.id} className="tabla-producto">
                                 <div className="container text-center">
@@ -72,9 +72,31 @@ const Cart = () => {
                             
                         )}
                     </div>
+                    <div className="tabla-productos cart-mobile d-flex">
+                        {cart.map(product =>
+                            <div key={product.id} className="tabla-producto d-flex">
+                                <div className="container d-flex">
+                                    <div className="row-prod">
+                                        <div>
+                                            <img src={product.imagen} alt={product.titulo} width={130} className="carrito-img" />
+                                        </div>
+                                        <div className="col-detalle">
+                                            <p>{product.titulo}</p>                                           
+                                            <p>Precio: ${product.precio}</p>                                            
+                                            <p>Cantidad: {product.cantidad}</p>                                            
+                                            <p>Total: ${product.cantidad * product.precio}</p>                                           
+                                            <p className="text-center"><a href="#" onClick={() => {removeItem(product.id)}}><img src={trash} alt="Eliminar Producto" titulo="Eliminar Producto"  /></a></p>                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                            </div>
+                            
+                        )}
+                    </div>
                     <div className="tabla-total row">
                         <div className="col col-lg-2">
-                            <div className="text-center" colSpan={1}><a href="#" onClick={clear} className="btn btn-secondary btn-sm">VACIAR CARRITO <img src={trash2} alt="Eliminar Producto" title="Eliminar Producto" /></a></div>
+                            <div className="text-center" colSpan={1}><a href="#" onClick={clear} className="btn btn-secondary btn-sm vaciar">VACIAR CARRITO <img src={trash2} alt="Eliminar Producto" title="Eliminar Producto" /></a></div>
                         </div>
                         <div className="col col-lg-1"></div>
                         <div className="col col-lg-1"></div>
